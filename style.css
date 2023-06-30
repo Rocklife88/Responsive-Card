@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: boder-box;
+}
+
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+:root {
+
+    --primary-color: hsl(225, 100%, 94%);
+    --primary-color-bright: hsl(245, 75%, 52%);
+    --secondary-pale: hsl(225, 100%, 98%);
+    --secondary-desaturated: hsl(225, 100%, 98%);
+    --secondary-dark: hsl(223, 47%, 23%);
+    --font-paragraph: 1rem;
+
+}
+
+body {
+
+    background-image: url('images/pattern-background-desktop.svg');
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--primary-color);
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: 400px;
+    max-width: 100%;
+    margin-top: 4rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+.card-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+
+}
+
+.hero-img-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+.card-description {
+    font-size: var(--font-paragraph);
+    line-height: 1.5;
+    padding: 1.2rem;
+
+
+}
+
+
+h2 {
+    font-size: 1.8rem;
+    padding: 3px;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+p {
+    font-size: var(--font-paragraph);
+
+}
+
+.description {
+
+    color: grey;
+
+}
+
+a {
+  color:grey;
+  text-decoration: none;
+  
+}
+
+.card-price-box {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 auto;
+    background: var(--secondary-pale);
+    padding: 0.5rem;
+    border-radius: 5px;
+
+}
+
+.price-card-left-content {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.icon-wrapper {
+    margin-right: 10px;
+}
+
+.music-icon-box {
+    display: flex;
+
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.music-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+p .plan-price {
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--secondary-dark);
+
+}
+
+.price-tag {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+ a:hover{
+  color:rgb(129, 73, 226);
+  text-decoration:underline;
+  
+
+}
+
+.btn-primary {
+    margin-top: 1.5rem;
+    margin-bottom: 1.1rem;
+    padding: 12px 88px;
+    border: none;
+    background: var(--primary-color-bright);
+    color: var(--primary-color);
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color:rgb(129, 73, 226);
+}
+
+.cancel-order {
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: 700;
+}
+
+.cancel-order:hover{
+  color:var(--secondary-dark);
+  text-decoration: none;
+  font-weight: 900;
+  
+}
+
+.cancel-box{
+
+  margin-bottom: 1.8rem;
+  padding: 8px;
+
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom:1rem
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .card {
+    margin-top: 2rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .card-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-description p {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    padding: 10px 60px;
+    font-size: 0.9rem;
+  }
+
+  .cancel-order {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    margin-top: 1rem;
+  }
+
+  .hero-img {
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .card-description {
+    padding: 1rem;
+  }
+
+  .btn-primary {
+    padding: 10px 40px;
+  }
+
+  .cancel-order {
+    font-size: 0.6rem;
+  }
+}
+
